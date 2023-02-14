@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               const CircleAvatar(
                 radius: 70.0,
@@ -29,11 +30,58 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Text(
-                'Flutter developer'.toUpperCase() ,
+                'Flutter developer'.toUpperCase(),
                 style: TextStyle(
-                  fontSize: 25.0,
+                  fontSize: 20.0,
                   color: Colors.teal.shade100,
                   fontFamily: 'SourceSansPro',
+                ),
+              ),
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
+              ),
+              Card(
+                margin: const EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 25.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ListTile(
+                    leading: const Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      '+91 9876543210',
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'SourceSansPro',
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                margin: const EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 25.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ListTile(
+                    leading: const Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      'lokesh@example.com',
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'SourceSansPro',
+                      ),
+                    ),
+                  ),
                 ),
               ),
             ],
